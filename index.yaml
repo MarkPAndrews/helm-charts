@@ -3,9 +3,9 @@ entries:
   neo4j:
   - apiVersion: v1
     appVersion: 2026.06.1
-    created: "2026-07-16T14:47:53.564137717-04:00"
+    created: "2026-07-16T14:51:24.652584388-04:00"
     description: Neo4j is the world's leading graph database
-    digest: dd2ae53f42326e499e897c32f41a7ec6e083a0152c33cfae9d7ff7f870021d31
+    digest: 322adc39e9a0dd8dac4998815811ce33239f9a47456303a7c1c7c015380f1716
     home: https://www.neo4j.com
     icon: http://info.neo4j.com/rs/773-GON-065/images/neo4j_logo.png
     keywords:
@@ -22,6 +22,6 @@ entries:
     - https://github.com/neo4j/neo4j
     - https://github.com/neo4j/docker-neo4j
     urls:
-    - https://markpandrews.github.io/helm-charts/neo4j-2026.6.1.tgz
-    version: 2026.6.1
-generated: "2026-07-16T14:47:53.557148136-04:00"
+    - https://markpandrews.github.io/helm-charts/neo4j-2026.6.0.tgz
+    version: 2026.6.0
+generated: "2026-07-16T14:51:24.646809028-04:00"
