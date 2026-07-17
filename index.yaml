@@ -3,7 +3,30 @@ entries:
   neo4j:
   - apiVersion: v1
     appVersion: 2026.06.0
-    created: "2026-07-17T10:48:15.192518334-04:00"
+    created: "2026-07-17T11:04:20.600291756-04:00"
+    description: Neo4j is the world's leading graph database
+    digest: 967c213bb51518730928d78546cef10358a7b5fc8b527f9dfff8f1ac16bee696
+    home: https://www.neo4j.com
+    icon: http://info.neo4j.com/rs/773-GON-065/images/neo4j_logo.png
+    keywords:
+    - graph
+    - database
+    - cypher
+    maintainers:
+    - email: bledi.feshti@neotechnology.com
+      name: bfeshti
+    - email: rigert.alekaj@neo4j.com
+      name: Rigert Alekaj
+    name: neo4j
+    sources:
+    - https://github.com/neo4j/neo4j
+    - https://github.com/neo4j/docker-neo4j
+    urls:
+    - https://markpandrews.github.io/helm-charts/neo4j-2026.6.10.tgz
+    version: 2026.6.10
+  - apiVersion: v1
+    appVersion: 2026.06.0
+    created: "2026-07-17T11:04:20.630409642-04:00"
     description: Neo4j is the world's leading graph database
     digest: e12d41893ea28cd6b0eaab81d567b6221ebb28728824835ca9c3144c9f5c944b
     home: https://www.neo4j.com
@@ -26,7 +49,7 @@ entries:
     version: 2026.6.9
   - apiVersion: v1
     appVersion: 2026.06.0
-    created: "2026-07-17T10:48:15.188586593-04:00"
+    created: "2026-07-17T11:04:20.627055567-04:00"
     description: Neo4j is the world's leading graph database
     digest: 1ccb8bfd9f6e36f1b033d223c1cc67070d445b800be84af50c9a314d5ae369d4
     home: https://www.neo4j.com
@@ -49,7 +72,7 @@ entries:
     version: 2026.6.8
   - apiVersion: v1
     appVersion: 2026.06.0
-    created: "2026-07-17T10:48:15.185729463-04:00"
+    created: "2026-07-17T11:04:20.624264789-04:00"
     description: Neo4j is the world's leading graph database
     digest: 9e145a41871fdc31a1d9a67473b7e8c5cb49db100a1802ed1d4c58bc145816c9
     home: https://www.neo4j.com
@@ -72,7 +95,7 @@ entries:
     version: 2026.6.7
   - apiVersion: v1
     appVersion: 2026.06.0
-    created: "2026-07-17T10:48:15.182393678-04:00"
+    created: "2026-07-17T11:04:20.621494621-04:00"
     description: Neo4j is the world's leading graph database
     digest: e6cc4b1aa263166a2454e631f6b20e5dcbdac5afe2ad7e674509784f8f72d508
     home: https://www.neo4j.com
@@ -95,7 +118,7 @@ entries:
     version: 2026.6.6
   - apiVersion: v1
     appVersion: 2026.06.0
-    created: "2026-07-17T10:48:15.178554499-04:00"
+    created: "2026-07-17T11:04:20.615250185-04:00"
     description: Neo4j is the world's leading graph database
     digest: ff768dc2d0e6d5141277ea2e953a577c12e9e448b3f5fb6c127cadaef3814fee
     home: https://www.neo4j.com
@@ -118,7 +141,7 @@ entries:
     version: 2026.6.5
   - apiVersion: v1
     appVersion: 2026.06.0
-    created: "2026-07-17T10:48:15.173488322-04:00"
+    created: "2026-07-17T11:04:20.612395082-04:00"
     description: Neo4j is the world's leading graph database
     digest: e50f232ec074c7120f24a96279105f0586241cd6d18622ccd4a38869ea66b7f1
     home: https://www.neo4j.com
@@ -141,7 +164,7 @@ entries:
     version: 2026.6.4
   - apiVersion: v1
     appVersion: 2026.06.0
-    created: "2026-07-17T10:48:15.169868755-04:00"
+    created: "2026-07-17T11:04:20.608203718-04:00"
     description: Neo4j is the world's leading graph database
     digest: 01d6672870bf3158e1464d1067b859af534a6a90443e07b2ce5808c29547ee90
     home: https://www.neo4j.com
@@ -164,7 +187,7 @@ entries:
     version: 2026.6.3
   - apiVersion: v1
     appVersion: 2026.06.0
-    created: "2026-07-17T10:48:15.166218755-04:00"
+    created: "2026-07-17T11:04:20.60521664-04:00"
     description: Neo4j is the world's leading graph database
     digest: 400b10c5c02070bdb95aefe8d1dfc6f077cc34381a37af5653200225a34f0b6a
     home: https://www.neo4j.com
@@ -187,7 +210,7 @@ entries:
     version: 2026.6.2
   - apiVersion: v1
     appVersion: 2026.06.1
-    created: "2026-07-17T10:48:15.162923926-04:00"
+    created: "2026-07-17T11:04:20.598266097-04:00"
     description: Neo4j is the world's leading graph database
     digest: 322adc39e9a0dd8dac4998815811ce33239f9a47456303a7c1c7c015380f1716
     home: https://www.neo4j.com
@@ -208,4 +231,4 @@ entries:
     urls:
     - https://markpandrews.github.io/helm-charts/neo4j-2026.6.0.tgz
     version: 2026.6.0
-generated: "2026-07-17T10:48:15.154306647-04:00"
+generated: "2026-07-17T11:04:20.594333168-04:00"
