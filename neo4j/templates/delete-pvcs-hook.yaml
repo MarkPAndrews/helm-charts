@@ -13,9 +13,7 @@ spec:
         - name: kubectl
           image:  "{{ include "cleanup.image" . }}"
           imagePullPolicy: {{ .Values.services.neo4j.cleanup.image.imagePullPolicy }}
-          command: [ "/bin/bash", "-c" ]
-          args: 
-            - "kubectl delete pvc -l helm.neo4j.com/instance={{ .Release.Name }} -n {{ .Release.Namespace }} --ignore-not-found  && echo 'Cleanup completed' && exit 0"
+          command: ["delete", "pvc", "-l", "helm.neo4j.com/instance={{ .Release.Name }}", "-n", "{{ .Release.Namespace }}", "--ignore-not-found"]
       restartPolicy: Never
   backoffLimit: 1
 ---
