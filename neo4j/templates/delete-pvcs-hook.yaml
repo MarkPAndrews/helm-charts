@@ -11,7 +11,7 @@ spec:
       serviceAccountName: "{{ include "neo4j.fullname" . }}-cleanup-pvc"
       containers:
         - name: kubectl
-          image: "bitnami/kubectl:latest"
+          image: "alpine/k8s:latest"
           imagePullPolicy: {{ .Values.services.neo4j.cleanup.image.imagePullPolicy }}
           command: [ "/bin/sh" ]
           args: 
