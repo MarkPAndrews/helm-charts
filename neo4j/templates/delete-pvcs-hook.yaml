@@ -11,12 +11,12 @@ spec:
       serviceAccountName: "{{ include "neo4j.fullname" . }}-cleanup-pvc"
       containers:
         - name: kubectl
-          image: "bitnami/kubectl:latest"
+          image: "kubectl:latest"
           imagePullPolicy: {{ .Values.services.neo4j.cleanup.image.imagePullPolicy }}
           command: [ "/bin/sh" ]
           args: 
             - "-c"
-            - "kubectl delete pvc -l helm.neo4j.com/instance={{ .Release.Name }} -n {{ .Release.Namespace }} --ignore-not-found"
+            - "kubectl delete pvc -l helm.neo4j.com/instance={{ .Release.Name }} -n {{ .Release.Namespace }} --ignore-not-found  && echo 'Cleanup completed' && exit 0"
       restartPolicy: Never
   backoffLimit: 1
 ---
