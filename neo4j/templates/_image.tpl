@@ -47,7 +47,7 @@
     {{- $registryName := .registry -}}
     {{- $repositoryName := .repository -}}
     {{- $separator := ":" -}}
-    {{- $termination := printf "%s.%s" $.Capabilities.KubeVersion.Major (regexReplaceAll "\\D+" $.Capabilities.KubeVersion.Minor "") -}}
+    {{- $termination := printf "v%s.%s.0" $.Capabilities.KubeVersion.Major (regexReplaceAll "\\D+" $.Capabilities.KubeVersion.Minor "") -}}
     {{- if not (empty (.tag | trim)) -}}
         {{- $termination := .tag | toString -}}
     {{- end -}}
