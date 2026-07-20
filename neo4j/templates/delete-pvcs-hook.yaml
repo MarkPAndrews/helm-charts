@@ -11,25 +11,9 @@ spec:
       serviceAccountName: "{{ include "neo4j.fullname" . }}-cleanup-pvc"
       containers:
         - name: kubectl
-          image:  bitnami/kubectl:latest
+          image:  "{{ include "cleanup.image" . }}"
           imagePullPolicy: {{ .Values.services.neo4j.cleanup.image.imagePullPolicy }}
-          command: 
-            - "/bin/sh"
-            - "-c"
-            - |
-              set -e
-              # Get all PVCs with the label selector
-              for pvc in $(kubectl get pvc -n "{{ .Release.Namespace }}" \
-                  -l "helm.neo4j.com/instance={{ .Release.Name }}" \
-                  -o jsonpath='{.items[*].metadata.name}'); do
-                echo "Processing PVC: $pvc"
-                # Remove finalizers (set to null or empty list)
-                kubectl patch pvc "$pvc" -n "{{ .Release.Namespace }}" \
-                  --type=merge \
-                  -p '{"metadata":{"finalizers":null}}' || true
-                # Now delete the PVC
-                kubectl delete pvc "$pvc" -n "{{ .Release.Namespace }}" --ignore-not-found --wait=false
-              done
+          command: ["kubectl", "delete", "pvc", "-l", "helm.neo4j.com/instance={{ .Release.Name }}", "-n", "{{ .Release.Namespace }}", "--ignore-not-found","--wait=false"]
       restartPolicy: Never
   backoffLimit: 1
 ---
